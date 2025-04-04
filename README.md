@@ -41,7 +41,7 @@ A real-time multiplayer chess game built with Node.js, Socket.IO, and Chess.js. 
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/your-username/chess-game.git
+git clone https://github.com/niikhilpatel/chess.git
 cd chess-game
 npm install
 npm start
