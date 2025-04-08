@@ -6,7 +6,14 @@ const path = require("path");
 
 const app = express();
 const server = http.createServer(app);
-const io = socket(server);
+// const io = socket(server);
+const io = new Server(server, {
+    cors: {
+      origin: "*", // allow all origins (for testing)
+      methods: ["GET", "POST"]
+    }
+  });
+  
 
 const chess = new Chess();
 let players = {};
@@ -69,6 +76,7 @@ io.on("connection", function (uniquesocket) {
 
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+
+server.listen(3000, '0.0.0.0', () => {
+    console.log('Server running on 0.0.0.0:3000');
+  });
