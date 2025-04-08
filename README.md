@@ -1,5 +1,8 @@
 # ♟ Real-Time Multiplayer Chess Game
 
+### To visit the Live Project <a href="http://44.203.170.224:3000/">LIVE PREVIEW</a> deployed in AWS EC2
+#### To play this game open this link in one device and open once again in another device and both automatically connected. 
+
 A real-time multiplayer chess game built with Node.js, Socket.IO, and Chess.js. Players can drag and drop pieces, view captured pieces, and see whose turn it is. The UI is built using Tailwind CSS and supports spectator mode for additional users.
 
 ## 📸 Screenshots
